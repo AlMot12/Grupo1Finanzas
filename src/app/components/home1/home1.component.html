@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="home1.component.scss">
+      </head>
+<body>
+  <h1 class="centrado"> Crédito Vehicular</h1>
+  <form>
+    <label for="currency">Moneda:</label>
+    <div class="currency-options">
+      <input type="radio" id="soles" name="currency" value="soles">
+      <label for="soles">Soles</label>
+      <input type="radio" id="dolares" name="currency" value="dolares">
+      <label for="dolares">Dólares</label>
+    </div>
+
+    <div class="flex-container">
+      <div class="flex-item">
+        <label for="monto">Monto a Financiar:</label>
+        <input type="text" id="monto" name="monto" placeholder="Ingrese el monto a financiar">
+      </div>
+      <div class="flex-item">
+        <label for="modelo">Modelo de Auto:</label>
+        <select id="modelo" name="modelo">
+          <option value="Toyota Corolla">Toyota Corolla</option>
+          <option value="Honda Civic">Honda Civic</option>
+          <option value="Ford Mustang">Ford Mustang</option>
+          <option value="Volkswagen Golf">Volkswagen Golf</option>
+          <option value="Toyota Yaris">Toyota Yaris</option>
+          <option value="Kia Rio">Kia Rio</option>
+          <option value="Suzuki Baleno">Suzuki Baleno</option>
+          <option value="Hyundai Accent">Hyundai Accent</option>
+          <option value="Nissan Versa">Nissan Versa</option>
+        </select>
+      </div>
+    </div>
+
+    <label for="tasa">Tipo de Tasa:</label>
+    <select id="tasa" name="tasa">
+      <option value="nominal">Tasa Nominal</option>
+    </select>
+
+    <label for="porcentaje">Porcentaje de Tasa:</label>
+    <input type="text" id="porcentaje" name="porcentaje" placeholder="Ingrese el porcentaje de tasa">
+
+    <div class="button-container">
+      <button type="button" id="calcular">Calcular</button>
+      <div>
+        <button type="button" id="atras">Atrás</button>
+      </div>
+  
+    </div>
+  </form>
+</body>
+</html>

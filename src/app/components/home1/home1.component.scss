@@ -1,0 +1,57 @@
+
+body {
+    background-color:burlywood; 
+    font-family: Arial, sans-serif;
+   
+  }
+
+  h1.centrado {
+    color: #f39508; 
+   }
+
+  form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(236, 142, 79, 0.938);
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .currency-options {
+    display: flex;
+    gap: 10px;
+  }
+  .button-container {
+    display: flex;
+justify-content: space-between;
+}
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  .flex-container .flex-item + .flex-item {
+    margin-left: 10px;
+  }
+
+  .flex-container {
+    display: flex;
+    gap: 10px;
+  }
+  .flex-item {
+    flex: 1;
+  }
+
+  .centrado {
+    text-align: center;
+}
+

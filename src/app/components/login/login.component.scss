@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .content {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .input-container {
+    max-width: 680px; /* Establece un ancho máximo para el contenedor de los campos */
+    margin-right: 10px; /* Agrega un margen derecho para dar espacio al formulario */
+  }
+  
+  h1 {
+    font-size: 24px;
+    text-align: left;
+    color: orange;
+  }
+  
+  h2 {
+    font-size: 15px;
+    text-align: right;
+    font-weight: normal
+  }
+  
+  h3 {
+    font-size: 15px;
+    text-align: left;
+    font-weight: normal
+  }
+  
+  h4 {
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal
+  }
+  
+  
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .social-buttons {
+    margin-top: 20px;
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .small-button {
+    background-color: orange;
+    padding: 5px 40px; /* Ajusta el padding para controlar el tamaño del botón */
+    font-size: 14px;  /* Ajusta el tamaño de la fuente */
+    width: auto;
+    margin: 0 auto;
+  }
+  
+  .facebook-link,
+  .google-link {
+    margin: 10px; /* Añade margen entre los enlaces */
+  }
+  
+  /* Estilos específicos para los logotipos */
+  .facebook-link img {
+    width: 20px; /* Ajusta el tamaño del logotipo de Facebook */
+  }
+  
+  .google-link img {
+    width: 20px; /* Ajusta el tamaño del logotipo de Google */
+  }
+  
+  
+  

@@ -1,57 +1,64 @@
+ /* Estilos para la primera división */
+ #division1,#division2,#division3 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5% ;
+  height: 40%; 
+  padding-top: 1%;
+}
+#division2{
+  display: block;
+  padding-left: 5%;
+  padding-right: 5% ;
+  height: 40%; 
+}
+
+#division3{
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5% ;
+}
+
+/* Estilos para las subdivisiones de la primera división */
+#subdivision1-1, #subdivision1-2 {
+  width: 48%; /* El 48% del ancho total para dejar espacio para el margen entre ellas */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho especificado */
+  padding: 10px; /* Añade un espacio interno para el contenido */
+}
 
 body {
-    background-color:burlywood; 
-    font-family: Arial, sans-serif;
-   
-  }
-
-  h1.centrado {
-    color: #f39508; 
-   }
-
-  form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(236, 142, 79, 0.938);
-  }
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  input[type="text"],
-  select {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-  }
-  .currency-options {
-    display: flex;
-    gap: 10px;
-  }
-  .button-container {
-    display: flex;
-justify-content: space-between;
-}
+  display: flex;
+  flex-direction: column;
   
-  button {
-    padding: 10px 20px;
-    font-size: 18px;
-  }
-
-  .flex-container .flex-item + .flex-item {
-    margin-left: 10px;
-  }
-
-  .flex-container {
-    display: flex;
-    gap: 10px;
-  }
-  .flex-item {
-    flex: 1;
-  }
-
-  .centrado {
-    text-align: center;
 }
 
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 25px; /* Ajusta el tamaño de la fuente según tus preferencias */
+}
+
+input[type="date"],select,input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
+  border: 2px solid #ccc; /* Añade un borde al input */
+  border-radius: 20px;
+  box-sizing: border-box; 
+}
+
+#botonContinuar {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #f39508; /* Borde sólido con color personalizado */
+  border-radius: 10px; /* Borde redondeado */
+  cursor: pointer;
+  background-color: #f39508; /* Color de fondo personalizado */
+  color: #fff; /* Color de texto blanco */
+}
+
+h1.centrado {
+  color: #f39508; 
+ }

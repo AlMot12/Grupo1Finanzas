@@ -4,52 +4,44 @@
         <link rel="stylesheet" type="text/css" href="home1.component.scss">
       </head>
 <body>
-  <h1 class="centrado"> Crédito Vehicular</h1>
+    <header style="background-color:bisque;">
+        <mat-toolbar>
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+              <mat-icon>home</mat-icon>
+            </button>
+            <span class="example-spacer"></span>
+            <img src="./assets/img/logo.png" alt="Imagen">
+          </mat-toolbar>
+      </header>
+    <h1 class="centrado" style="margin-left: auto;margin-right: auto;"> Crédito Vehicular</h1>
   <form>
-    <label for="currency">Moneda:</label>
-    <div class="currency-options">
-      <input type="radio" id="soles" name="currency" value="soles">
-      <label for="soles">Soles</label>
-      <input type="radio" id="dolares" name="currency" value="dolares">
-      <label for="dolares">Dólares</label>
-    </div>
-
-    <div class="flex-container">
-      <div class="flex-item">
-        <label for="monto">Monto a Financiar:</label>
-        <input type="text" id="monto" name="monto" placeholder="Ingrese el monto a financiar">
+    <div id="division1">
+      <div id="subdivision1-1">     
+        <div class="flex-item">
+          <label for="fechaSolicitud">Fecha de Solicitud: </label>
+            <input type="date" id="fechaSolicitud" name="fechaSolicitud" min=fechaactual() >
+        </div>
       </div>
-      <div class="flex-item">
-        <label for="modelo">Modelo de Auto:</label>
+      <div id="subdivision1-2">
+        <label for="modelo">Tipo de periodo:</label>
         <select id="modelo" name="modelo">
-          <option value="Toyota Corolla">Toyota Corolla</option>
-          <option value="Honda Civic">Honda Civic</option>
-          <option value="Ford Mustang">Ford Mustang</option>
-          <option value="Volkswagen Golf">Volkswagen Golf</option>
-          <option value="Toyota Yaris">Toyota Yaris</option>
-          <option value="Kia Rio">Kia Rio</option>
-          <option value="Suzuki Baleno">Suzuki Baleno</option>
-          <option value="Hyundai Accent">Hyundai Accent</option>
-          <option value="Nissan Versa">Nissan Versa</option>
+          <option value="Periodo de gracia parcial">Periodo de gracia parcial</option>
+          <option value="Periodo de gracia total">Periodo de gracia total</option>
         </select>
       </div>
-    </div>
+  </div>
 
-    <label for="tasa">Tipo de Tasa:</label>
-    <select id="tasa" name="tasa">
-      <option value="nominal">Tasa Nominal</option>
-    </select>
-
-    <label for="porcentaje">Porcentaje de Tasa:</label>
-    <input type="text" id="porcentaje" name="porcentaje" placeholder="Ingrese el porcentaje de tasa">
-
-    <div class="button-container">
-      <button type="button" id="calcular">Calcular</button>
-      <div>
-        <button type="button" id="atras">Atrás</button>
-      </div>
-  
-    </div>
+  <div id="division2">
+    <label for="periodo" >Periodo de gracia:</label>
+    <input style="display: block;" type="number" id="periodo" name="periodo" placeholder="Ingrese números" min="0" max="30" oninput="true">
+  </div>
+  <div id="division2">
+    <label for="periodo" >Periodo de pago:</label>
+    <input style="display: block;" type="number" id="periodo" name="periodo" placeholder="Ingrese números" min="0" max="150" oninput="true">
+  </div>
+  <div id="division3">
+    <button id="botonContinuar"  [routerLink]="['/home2']">Continuar</button>
+  </div>
   </form>
 </body>
 </html>

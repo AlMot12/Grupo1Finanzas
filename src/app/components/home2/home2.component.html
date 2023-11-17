@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="home2.component.scss">
+      </head>
+<body>
+    <header style="background-color:bisque;">
+        <mat-toolbar>
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+              <mat-icon>home</mat-icon>
+            </button>
+            <span class="example-spacer"></span>
+            <img src="./assets/img/logo.png" alt="Imagen">
+          </mat-toolbar>
+      </header>
+
+  <h1 class="centrado"> Crédito Vehicular</h1>
+  <form>
+    <label for="currency">Moneda:</label>
+    <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">Soles</mat-radio-button>
+        <mat-radio-button value="2">Dólares</mat-radio-button>
+    </mat-radio-group>
+
+    <div class="flex-container" style="margin-top: 1%;" >
+      <div class="flex-item">
+        <label for="monto">Monto a Financiar:</label>
+        <input type="text" id="monto" name="monto" placeholder="Ingrese el monto a financiar">
+      </div>
+      <div class="flex-item">
+        <label for="modelo">Modelo de Auto:</label>
+        <select id="modelo" name="modelo">
+          <option value="Toyota Corolla">Toyota Corolla</option>
+          <option value="Honda Civic">Honda Civic</option>
+          <option value="Ford Mustang">Ford Mustang</option>
+          <option value="Volkswagen Golf">Volkswagen Golf</option>
+          <option value="Toyota Yaris">Toyota Yaris</option>
+          <option value="Kia Rio">Kia Rio</option>
+          <option value="Suzuki Baleno">Suzuki Baleno</option>
+          <option value="Hyundai Accent">Hyundai Accent</option>
+          <option value="Nissan Versa">Nissan Versa</option>
+        </select>
+      </div>
+    </div>
+    <label for="tasa" style="margin-top: 5%;">Tipo de Tasa:</label>
+    <select id="tasa" name="tasa" style="height: 30%;">
+      <option value="nominal"  >Tasa Nominal</option>
+      <option value="nominal"  >Tasa Efectiva</option>
+    </select>
+
+    <label for="porcentaje" style="margin-top: 5%;">Porcentaje de Tasa:</label>
+    <input type="text" id="porcentaje" name="porcentaje" style="height: 25%;width: 99%;" placeholder="Ingrese el porcentaje de tasa">
+
+    <div class="button-container" style="margin-top: 5%;">
+      <button type="button" id="atras" [routerLink]="['/home1']">Atrás</button>
+      <div>
+      <button type="button" id="calcular">Calcular</button>
+      </div>
+  
+    </div>
+  </form>
+</body>
+</html>

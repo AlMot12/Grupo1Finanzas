@@ -1,0 +1,79 @@
+
+body {
+  font-family: Arial, sans-serif;
+ 
+}
+
+h1.centrado {
+  color: #f39508; 
+ }
+
+form {
+  background-color: white;
+  height: 17%;
+  padding: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 100px;
+}
+input[type="text"]{
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+   border-radius: 20px;
+   width:  100%;
+   height: 70%;
+   padding-left: 10px;
+}
+select {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  width: 100%;
+  height: 80%;
+  padding: 5px;
+}
+.currency-options {
+  display: flex;
+  gap: 10px;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  }
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.flex-container .flex-item + .flex-item {
+  margin-left: 10px;
+}
+
+.flex-container {
+  display: flex;
+  gap: 10px;
+}
+.flex-item {
+  flex: 1;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+#calcular,#atras{
+  border: 2px solid #f39508; /* Borde sólido con color personalizado */
+  border-radius: 10px; /* Borde redondeado */
+  cursor: pointer;
+  background-color: #f39508; /* Color de fondo personalizado */
+  color: #fff; /* Color de texto blanco */
+}

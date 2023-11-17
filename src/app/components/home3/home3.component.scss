@@ -1,0 +1,44 @@
+/* Estilos generales para el body */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para las divisiones */
+.division {
+    width: 80%; /* Ajusta el ancho de las divisiones según tus preferencias */
+    margin-left: auto;
+    margin-right:auto; 
+    padding: 20px;
+    text-align: center; /* Centra el contenido dentro de las divisiones */
+}
+
+/* Estilos para la matriz */
+.matriz {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.matriz div {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Estilos para los resultados en la tercera división */
+.resultados {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+h1.centrado {
+    color: #f39508; 
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+h1 {
+    color: #f39508; 
+   }

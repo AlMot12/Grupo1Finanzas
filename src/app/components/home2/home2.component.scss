@@ -1,7 +1,6 @@
 
 body {
   font-family: Arial, sans-serif;
- 
 }
 
 h1.centrado {
@@ -19,8 +18,9 @@ label {
   display: block;
   margin-bottom: 10px;
   border-radius: 100px;
+  font-size: 25px;
 }
-input[type="text"]{
+input[type="text"],input[type="number"]{
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
    border-radius: 20px;

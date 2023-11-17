@@ -7,14 +7,14 @@
     <header style="background-color:bisque;">
         <mat-toolbar>
             <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-              <mat-icon>home</mat-icon>
+              <mat-icon [routerLink]="['/login']">home</mat-icon>
             </button>
             <span class="example-spacer"></span>
             <img src="./assets/img/logo.png" alt="Imagen">
           </mat-toolbar>
       </header>
 
-  <h1 class="centrado"> Crédito Vehicular</h1>
+      <h1 class="centrado" style="margin-left: auto;margin-right: auto;"> Crédito Vehicular</h1>
   <form>
     <label for="currency">Moneda:</label>
     <mat-radio-group aria-label="Select an option">
@@ -49,7 +49,7 @@
     </select>
 
     <label for="porcentaje" style="margin-top: 5%;">Porcentaje de Tasa:</label>
-    <input type="text" id="porcentaje" name="porcentaje" style="height: 25%;width: 99%;" placeholder="Ingrese el porcentaje de tasa">
+    <input id="porcentaje" name="porcentaje" type="number" placeholder="Ingrese números" step="0.1" min="0.1" max="100" onkeydown="return false" style="display: block; height: 25%;width: 99%;" placeholder="Ingrese el porcentaje de tasa">
 
     <div class="button-container" style="margin-top: 5%;">
       <button type="button" id="atras" [routerLink]="['/home1']">Atrás</button>

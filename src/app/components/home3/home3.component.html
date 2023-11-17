@@ -1,1 +1,69 @@
-<p>home3 works!</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="home3.component.scss">
+      </head>
+<body>
+    
+    <header style="background-color:bisque;">
+        <mat-toolbar>
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+              <mat-icon>home</mat-icon>
+            </button>
+            <span class="example-spacer"></span>
+            <img src="./assets/img/logo.png" alt="Imagen">
+          </mat-toolbar>
+      </header>
+    <div class="division">
+        <h1>Resultados</h1>
+    </div>
+
+    <div class="division" style="background-color: lightsalmon;">
+        <h2>Cuotas Mensuales</h2>
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+            <ng-container matColumnDef="id">
+              <th mat-header-cell *matHeaderCellDef> Mes </th>
+              <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+            </ng-container>
+          
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> Saldo Inicial </th>
+              <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+          
+            <ng-container matColumnDef="lastname">
+              <th mat-header-cell *matHeaderCellDef> Interes </th>
+              <td mat-cell *matCellDef="let element"> {{element.lastname}} </td>
+            </ng-container>
+          
+            <ng-container matColumnDef="email">
+              <th mat-header-cell *matHeaderCellDef> Amortización </th>
+              <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="password">
+                <th mat-header-cell *matHeaderCellDef> Cuota </th>
+                <td mat-cell *matCellDef="let element"> {{element.password}} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="DNI">
+                <th mat-header-cell *matHeaderCellDef> Saldo Final </th>
+                <td mat-cell *matCellDef="let element"> {{element.DNI}} </td>
+              </ng-container>
+          
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+    </div>
+
+    <div class="division resultados">
+        <p>Vehiculo: 123</p>
+        <p>Pago mensual: 456</p>
+        <p>Costo del seguro: 789</p>
+        <p>VAN: 789</p>
+        <p>TIR: 789</p>
+    </div>
+
+</body>
+</html>

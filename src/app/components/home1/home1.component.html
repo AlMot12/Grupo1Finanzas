@@ -7,7 +7,7 @@
     <header style="background-color:bisque;">
         <mat-toolbar>
             <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-              <mat-icon>home</mat-icon>
+              <mat-icon [routerLink]="['/login']">home</mat-icon>
             </button>
             <span class="example-spacer"></span>
             <img src="./assets/img/logo.png" alt="Imagen">
@@ -33,11 +33,11 @@
 
   <div id="division2">
     <label for="periodo" >Periodo de gracia:</label>
-    <input style="display: block;" type="number" id="periodo" name="periodo" placeholder="Ingrese números" min="0" max="30" oninput="true">
+    <input style="display: block;" type="number" id="periodo" name="periodo" placeholder="Ingrese números" min="0" max="30" onkeydown="return false">
   </div>
   <div id="division2">
     <label for="periodo" >Periodo de pago:</label>
-    <input style="display: block;" type="number" id="periodo" name="periodo" placeholder="Ingrese números" min="0" max="150" oninput="true">
+    <input style="display: block;" type="number" id="periodo" name="periodo" placeholder="Ingrese números" min="0" max="150" onkeydown="return false">
   </div>
   <div id="division3">
     <button id="botonContinuar"  [routerLink]="['/home2']">Continuar</button>

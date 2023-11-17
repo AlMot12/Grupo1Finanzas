@@ -1,4 +1,8 @@
- /* Estilos para la primera división */
+
+ 
+.example-spacer {
+  flex: 1 1 auto;
+}
  #division1,#division2,#division3 {
   display: flex;
   justify-content: space-between;

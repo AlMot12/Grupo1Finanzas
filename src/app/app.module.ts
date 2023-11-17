@@ -18,6 +18,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { HttpClientModule } from '@angular/common/http';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     MatSnackBarModule,
     HttpClientModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

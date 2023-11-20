@@ -26,7 +26,7 @@ export class ClienteService {
   }
 
   checkUserExists(email: string): Observable<boolean | null> {
-    return this.http.get<any[]>(`${this.baseUrl}/users/check`, {
+    return this.http.get<any[]>(`${this.baseUrl}/clientes/check`, {
       params: new HttpParams().set('email', email)
     }).pipe(
       map((response: any[]) => {

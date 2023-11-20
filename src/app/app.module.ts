@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -45,7 +45,7 @@ import {MatTableModule} from '@angular/material/table';
     HttpClientModule,
     MatTableModule
   ],
-  providers: [],
+  providers: [{ provide: LOCALE_ID, useValue: 'es-PE' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
